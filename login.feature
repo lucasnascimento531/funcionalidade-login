@@ -18,21 +18,21 @@
             Cenário: Usuário Inexistente
             Quando eu digitar o usuário "joão@jota.com.xr"
             E a senha "senha@123"
-            Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos"
+            Então deve exibir a mensagem "Usuário ou senha inválidos" de alerta
 
 
 
             Cenário: Usuário com senha inválida
             Quando eu digitar o usuário "joão@jota.com.br"
             E a senha "xkmvutb"
-            Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos"
+            Então deve exibir a mensagem "Usuário ou senha inválidos" de alerta
 
 
 
             Esquema do Cenário: Autenticar Multiplos Usuários
             Quando eu digitar o <usuário>
             E a <senha>
-            Então deve exibir a <mensagem> de identificação do usuário
+            Então deve exibir a <mensagem> de boas vindas
             
             Exemplos:
             | usuario                     | senha       | mensagem    |
